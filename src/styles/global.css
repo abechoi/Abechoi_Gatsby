@@ -25,12 +25,13 @@ p {
 .layout {
   width: 100%;
   margin: 0 auto;
+  z-index: 1;
+  position: sticky;
 }
 .content {
   height: calc(100vh - 100px);
-}
-section {
-  padding: 50px;
+  z-index: -1;
+  position: sticky;
 }
 /* Navbar */
 nav {
@@ -40,7 +41,6 @@ nav {
   background-color: #20232a;
   width: 100%;
   height: 100px;
-  position: sticky;
 }
 .banner {
   margin: auto auto;
@@ -127,7 +127,7 @@ nav .icons h2:hover {
 /* Footer */
 footer {
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   background-color: #20232a;
   color: #ffffff;
   text-align: center;

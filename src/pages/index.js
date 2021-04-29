@@ -11,9 +11,13 @@ export default function Home() {
           <h2>Design</h2>
           <h3>Develop & Deploy</h3>
           <p>UX designer & web developer based in California</p>
-          <Link className={styles.btn} to="/projects">
-            My Portfolio Project
-          </Link>
+          <Link to="/projects">MY PORTFOLIO</Link>
+          <Link to="/about">ABOUT ME</Link>
+        </div>
+        <div>
+          <p>Latest Updates</p>
+          <p>BLOG abechoi.com v2.0 with Gatsby</p>
+          <p>My First Blog</p>
         </div>
       </section>
     </Layout>
