@@ -1,0 +1,23 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100%;
+}
+.about h2 {
+  margin-top: 25px;
+}
+.about div:nth-child(1) {
+  background-color: #20232a;
+}
+.about div:nth-child(1) div:nth-child(1) {
+  border-radius: 50%;
+  margin: 20px 20px;
+}
+.about div:nth-child(1) div:nth-child(2) {
+  margin: 0 20px;
+  padding: 0 40px;
+  color: #fff;
+}
+.about div:nth-child(2) {
+  margin: 25px 100px;
+}
