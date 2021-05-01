@@ -1,6 +1,7 @@
 .portfolio {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 40px;
+  color: #20232a;
 }
 .portfolio > h2 {
   font-size: 3em;
@@ -21,6 +22,10 @@
   font-weight: 500;
 }
 .projects p {
-  color: #ccc;
+  color: #20232a;
   margin-top: 4px;
+}
+
+.projects a {
+  color: #20232a;
 }

@@ -11,7 +11,7 @@ export default function About({ data }) {
     <Layout>
       <div className={styles.about}>
         <div>
-          <GatsbyImage image={profile} />
+          <GatsbyImage image={profile} alt="profile-pic" />
           <div>
             <p>Abraham Jong-Hae Choi</p>
             <p>abraham.choi@icloud.com</p>
@@ -35,7 +35,7 @@ export default function About({ data }) {
             Service Provider where I perform network operations, maintain
             servers, and provide helpdesk support.
           </p>
-          <h2>How I Spent My Free Time</h2>
+          <h2>How I Spend My Free Time</h2>
           <p>
             I typically spend a lot of my free time coding. React is my most
             comfortable framework, if you haven't noticed. When I'm not coding,

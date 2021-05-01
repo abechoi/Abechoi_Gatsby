@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   color: #20232a;
-  height: 100%;
+  height: calc(100vh - 100px);
 }
 .header div:nth-child(1) {
   position: relative;
