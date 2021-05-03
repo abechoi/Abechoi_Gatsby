@@ -1,0 +1,31 @@
+.docsContainer {
+  text-align: center;
+  padding-top: 40px;
+  color: #20232a;
+}
+.docsContainer > h2 {
+  font-size: 3em;
+}
+.docsContainer > h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+.docs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  margin: 80px 20px;
+}
+.docs h3 {
+  text-align: center;
+  margin: 20px auto 0px;
+  font-weight: 500;
+}
+.docs p {
+  color: #20232a;
+  margin-top: 4px;
+}
+
+.docs a {
+  color: #20232a;
+}

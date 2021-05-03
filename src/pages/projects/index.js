@@ -6,7 +6,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function Projects({ data }) {
   const projects = data.allMarkdownRemark.nodes
-  console.log(projects[0])
 
   return (
     <Layout>

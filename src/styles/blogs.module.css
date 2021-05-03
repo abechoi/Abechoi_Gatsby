@@ -1,0 +1,31 @@
+.blogsContainer {
+  text-align: center;
+  padding-top: 40px;
+  color: #20232a;
+}
+.blogsContainer > h2 {
+  font-size: 3em;
+}
+.blogsContainer > h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  margin: 80px 20px;
+}
+.blogs h3 {
+  text-align: center;
+  margin: 20px auto 0px;
+  font-weight: 500;
+}
+.blogs p {
+  color: #20232a;
+  margin-top: 4px;
+}
+
+.blogs a {
+  color: #20232a;
+}
