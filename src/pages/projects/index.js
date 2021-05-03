@@ -32,7 +32,10 @@ export default function Projects({ data }) {
 
 export const query = graphql`
   query ProjectsPage {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: frontmatter___date, order: DESC }
+      filter: { frontmatter: { type: { eq: "project" } } }
+    ) {
       nodes {
         frontmatter {
           title

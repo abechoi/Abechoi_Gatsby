@@ -1,7 +1,7 @@
 ---
 title: AbeChoi.com 2.0
 slug: abechoi-gatsby
-type: doc
+type: project
 date: 2021-04-28T00:00:00+00:00
 tags: ["gatsby", "react", "graphql"]
 thumb: ../../images/thumbs/shoes.png
