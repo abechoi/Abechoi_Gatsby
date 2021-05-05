@@ -37,6 +37,7 @@
   color: #20232a;
 }
 
+/* Blog Card */
 .blog {
   display: block;
   border-radius: 8px;
@@ -44,7 +45,6 @@
   width: 400px;
   padding: 5px 20px;
 }
-
 .blog div:nth-child(1) {
   display: flex;
   margin: 0;
@@ -71,7 +71,13 @@
   background-color: #20232a;
   color: #61dbfb;
 }
+.blog:hover .tags p {
+  background-color: #ff85ea;
+  color: #20232a;
+  border-color: #20232a;
+}
 
+/* Side Panel */
 .header .side {
   margin: 25px auto;
   height: 100%;
@@ -79,9 +85,31 @@
   padding: 20px 25px;
   border-left: 4px solid #20232a;
 }
-.header .side p:nth-child(1) {
+.header .side h4 {
   font-size: 25px;
   font-weight: 600;
   text-align: center;
   border-bottom: 4px solid #20232a;
+}
+.side a {
+  text-decoration: none;
+}
+
+.sideLink {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  border: 2px solid #20232a;
+  border-radius: 8px;
+}
+.sideLink p {
+  margin: 5px 10px;
+  color: #20232a;
+}
+.sideLink:hover {
+  background-color: #20232a;
+}
+.sideLink:hover p {
+  color: #00feca;
 }

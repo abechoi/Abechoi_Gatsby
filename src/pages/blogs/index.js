@@ -2,19 +2,10 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/blogs.module.css"
-import Blog from "../../components/Blog"
+import BlogCard from "../../components/BlogCard"
 
 export default function Blogs({ data }) {
   const blogs = data.allMarkdownRemark.nodes
-
-  // const formatDate = date => {
-  //   const newDate = date.split("-")
-  //   const year = newDate[0]
-  //   const month = newDate[1]
-  //   const day = newDate[2].split("T")
-  //   console.log(newDate)
-  //   return `${month}/${day[0]}/${year}`
-  // }
 
   return (
     <Layout>
@@ -25,15 +16,21 @@ export default function Blogs({ data }) {
           <div className={styles.blogs}>
             {blogs.map(blog => (
               <Link to={"/blogs/" + blog.frontmatter.slug} key={blog.id}>
-                <Blog blog={blog} />
+                <BlogCard blog={blog} />
               </Link>
             ))}
           </div>
         </div>
         <div className={styles.side}>
-          <p>By Time</p>
-          <p>My New Gatsby Site</p>
-          <p>My First Blog</p>
+          <h4>By Time</h4>
+          {blogs.map(blog => (
+            <Link to={"/blogs/" + blog.frontmatter.slug} key={blog.id}>
+              <div className={styles.sideLink}>
+                <p>{blog.frontmatter.listDate}</p>
+                <p>{blog.frontmatter.title}</p>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
     </Layout>
@@ -50,7 +47,8 @@ export const query = graphql`
         frontmatter {
           title
           slug
-          date
+          cardDate: date(formatString: "LL")
+          listDate: date(formatString: "M/D/YY")
           tags
           description
         }
