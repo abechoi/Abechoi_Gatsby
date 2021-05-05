@@ -1,20 +1,24 @@
 import React, { createContext } from "react"
 
-export const Context = createContext()
+export const DateContext = createContext()
 
-const ContextProvider = props => {
+const DateContextProvider = props => {
   const formatDate = date => {
     const newDate = date.split("-")
     const year = newDate[0]
     const month = newDate[1]
     const day = newDate[2].split("T")
-    console.log(newDate)
+
     return `${month}/${day[0]}/${year}`
   }
 
+  const test = "this is a test"
+
   return (
-    <Context.Provider value={{ formatDate }}>{props.children}</Context.Provider>
+    <DateContext.Provider value={{ formatDate, test }}>
+      {props.children}
+    </DateContext.Provider>
   )
 }
 
-export default ContextProvider
+export default DateContextProvider

@@ -10,7 +10,7 @@ const Blog = ({ blog }) => {
       </div>
       <div className={styles.tags}>
         {blog.frontmatter.tags &&
-          blog.frontmatter.tags.map(tag => <p>{tag}</p>)}
+          blog.frontmatter.tags.map((tag, id) => <p key={id}>{tag}</p>)}
       </div>
       <p>{blog.frontmatter.description}</p>
     </div>
