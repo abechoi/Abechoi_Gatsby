@@ -2,7 +2,7 @@
 title: Retro Gaming Zone
 slug: retro-gaming-zone
 type: project
-date: 2021-01-01T00:00:00+00:00
+date: 2021-01-01
 tags: ["svele", "firebase"]
 thumb: ../../images/thumbs/gaming.png
 featuredImg: ../../images/featured/gaming-banner.png

@@ -2,7 +2,7 @@
 title: Skateboards2Go
 slug: skateboards-to-go
 type: project
-date: 2021-01-09T00:00:00+00:00
+date: 2021-01-09
 tags: ["vue", "firebase"]
 thumb: ../../images/thumbs/skate.png
 featuredImg: ../../images/featured/skate-banner.png

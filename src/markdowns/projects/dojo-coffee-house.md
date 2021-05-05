@@ -2,7 +2,7 @@
 title: The Dojo Coffee House
 slug: the-dojo-coffee-house
 type: project
-date: 2021-01-01T00:00:00+00:00
+date: 2021-01-01
 tags: ["html", "css"]
 thumb: ../../images/thumbs/coffee.png
 featuredImg: ../../images/featured/coffee-banner.png

@@ -6,11 +6,13 @@ import { graphql } from "gatsby"
 export default function BlogDetails({ data }) {
   const { html } = data.markdownRemark
   const { title } = data.markdownRemark.frontmatter
+  const { date } = data.markdownRemark.frontmatter
 
   return (
     <Layout>
       <div className={styles.details}>
         <h2>{title}</h2>
+        <h3>{date}</h3>
         <div
           className={styles.html}
           dangerouslySetInnerHTML={{ __html: html }}
@@ -26,6 +28,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
       }
     }
   }

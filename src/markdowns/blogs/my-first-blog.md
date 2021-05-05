@@ -2,9 +2,9 @@
 title: My First Blog
 slug: my-first-blog
 type: blog
-date: 2021-05-02
-thumb: ../../images/thumbs/shoes.png
-featuredImg: ../../images/featured/shoes-banner.png
+date: 2020-07-24
+tags: ["react"]
+description: "Welcome to my new site!"
 ---
 
 Welcome to my new site! My Name is Abe Choi, in case that was not obvious. No need to go over my background, I will let my About page do that. I have been wanting to get into web development for a long time now. Initially, I skipped straight into Electron with little to no knowledge of javascript and poor knowledge of HTML and CSS. Before I could finish a single Electron tutorial I decided that I needed a strong foundation before tackling javascript frameworks and libraries. Since 2019, I have been developing my foundational skills until I was able to move onto more advanced topics. Angular was my first framework, after learning that for a little bit, I decided to try React as I have read that it was easier to start off with... and it was defintely easier, for me anyways.
