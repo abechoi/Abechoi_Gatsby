@@ -2,7 +2,7 @@
 title: My First Blog
 slug: my-first-blog
 type: blog
-date: 2021-05-02T00:00:00+00:00
+date: 2021-05-02
 thumb: ../../images/thumbs/shoes.png
 featuredImg: ../../images/featured/shoes-banner.png
 ---

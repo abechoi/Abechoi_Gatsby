@@ -10,6 +10,11 @@
   font-size: 2em;
   font-weight: 400;
 }
+.docsContainer p {
+  color: #20232a;
+  margin: 80px;
+  font-size: 20px;
+}
 .docs {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -20,10 +25,6 @@
   text-align: center;
   margin: 20px auto 0px;
   font-weight: 500;
-}
-.docs p {
-  color: #20232a;
-  margin-top: 4px;
 }
 
 .docs a {

@@ -21,6 +21,15 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
+      docs: allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: "doc" } } }
+      ) {
+        nodes {
+          frontmatter {
+            slug
+          }
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
@@ -38,6 +47,14 @@ exports.createPages = ({ graphql, actions }) => {
       actions.createPage({
         path: "/blogs/" + node.frontmatter.slug,
         component: path.resolve("./src/templates/blog-details.js"),
+        context: { slug: node.frontmatter.slug },
+      })
+    })
+
+    result.data.docs.nodes.forEach(node => {
+      actions.createPage({
+        path: "/docs/" + node.frontmatter.slug,
+        component: path.resolve("./src/templates/doc-details.js"),
         context: { slug: node.frontmatter.slug },
       })
     })

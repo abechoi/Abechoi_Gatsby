@@ -12,8 +12,8 @@
 }
 .blogs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
   margin: 80px 20px;
 }
 .blogs h3 {
@@ -28,4 +28,9 @@
 
 .blogs a {
   color: #20232a;
+}
+
+.blog {
+  border: 1px solid black;
+  grid-template-columns: 1fr 1fr;
 }

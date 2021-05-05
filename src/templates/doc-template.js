@@ -21,8 +21,8 @@ export default function BlogDetails({ data }) {
 }
 
 export const query = graphql`
-  query BlogDetails($slug: String) {
-    markdownRemark(frontmatter: { slug: { eq: $slug }, type: { eq: "blog" } }) {
+  query DocDetails($slug: String) {
+    markdownRemark(frontmatter: { slug: { eq: $slug }, type: { eq: "doc" } }) {
       html
       frontmatter {
         title

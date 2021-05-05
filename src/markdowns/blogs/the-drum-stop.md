@@ -1,8 +1,8 @@
 ---
 title: The Drum Stop
 slug: the-drum-stop
-type: project
-date: 2021-01-01T00:00:00+00:00
+type: blog
+date: 2021-01-01
 tags: ["next"]
 thumb: ../../images/thumbs/drums.png
 featuredImg: ../../images/featured/drums-banner.png

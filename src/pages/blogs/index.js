@@ -6,6 +6,17 @@ import * as styles from "../../styles/blogs.module.css"
 export default function Blogs({ data }) {
   const blogs = data.allMarkdownRemark.nodes
 
+  console.log(typeof blogs[0].frontmatter.date)
+
+  const formatDate = date => {
+    const newDate = date.split("-")
+    const year = newDate[0]
+    const month = newDate[1]
+    const day = newDate[2].split("T")
+    console.log(newDate)
+    return `${month}/${day[0]}/${year}`
+  }
+
   return (
     <Layout>
       <div className={styles.blogsContainer}>
@@ -14,8 +25,9 @@ export default function Blogs({ data }) {
         <div className={styles.blogs}>
           {blogs.map(blog => (
             <Link to={"/blogs/" + blog.frontmatter.slug} key={blog.id}>
-              <div>
+              <div className={styles.blog}>
                 <h3>{blog.frontmatter.title}</h3>
+                <h3>{formatDate(blog.frontmatter.date)}</h3>
               </div>
             </Link>
           ))}
@@ -35,6 +47,7 @@ export const query = graphql`
         frontmatter {
           title
           slug
+          date
         }
         id
       }
