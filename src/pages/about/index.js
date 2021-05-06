@@ -13,7 +13,7 @@ export default function About({ data }) {
       <div className={styles.about}>
         <div>
           <StaticImage
-            src="../../images/profile.png"
+            src="https://avatars.githubusercontent.com/u/7634806?v=4"
             alt="profile-pic"
             placeholder="blurred"
             layout="fixed"
