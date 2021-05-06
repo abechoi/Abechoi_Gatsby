@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/blog-details.module.css"
 import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 
 export default function BlogDetails({ data }) {
   const { html } = data.markdownRemark
@@ -9,6 +10,9 @@ export default function BlogDetails({ data }) {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className={styles.details}>
         <h2>{title}</h2>
         <div

@@ -2,12 +2,16 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/docs.module.css"
+import Helmet from "react-helmet"
 
 export default function Docs({ data }) {
   const docs = data.allMarkdownRemark.nodes
 
   return (
     <Layout>
+      <Helmet>
+        <title>Abe Choi | Docs</title>
+      </Helmet>
       <div className={styles.docsContainer}>
         <h2>Docs</h2>
         <h3>My Technical Documentations</h3>

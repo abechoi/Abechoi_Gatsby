@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as styles from "../styles/project-details.module.css"
 import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 
 export default function ProjectDetails({ data }) {
   const { html } = data.markdownRemark
@@ -12,6 +13,9 @@ export default function ProjectDetails({ data }) {
   )
   return (
     <Layout>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className={styles.details}>
         <h2>{title}</h2>
         <div className={styles.featured}>

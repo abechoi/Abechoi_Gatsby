@@ -4,12 +4,16 @@ import Layout from "../../components/Layout"
 import * as styles from "../../styles/blogs.module.css"
 import BlogCard from "../../components/BlogCard"
 import Sidebar from "../../components/Sidebar"
+import Helmet from "react-helmet"
 
 export default function Blogs({ data }) {
   const blogs = data.allMarkdownRemark.nodes
 
   return (
     <Layout>
+      <Helmet>
+        <title>Abe Choi | Blogs</title>
+      </Helmet>
       <section className={styles.header}>
         <div className={styles.blogsContainer}>
           <h2>Blogs</h2>

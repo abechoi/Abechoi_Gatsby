@@ -3,12 +3,16 @@ import React from "react"
 import Layout from "../components/Layout.js"
 import * as styles from "../styles/home.module.css"
 import Sidebar from "../components/Sidebar"
+import Helmet from "react-helmet"
 
 export default function Home({ data }) {
   const markdowns = data.allMarkdownRemark.nodes
 
   return (
     <Layout>
+      <Helmet>
+        <title>Abe Choi | Gatsby</title>
+      </Helmet>
       <section className={styles.header}>
         <div className={styles.homeContainer}>
           <h2>Design</h2>

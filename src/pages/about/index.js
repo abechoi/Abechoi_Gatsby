@@ -3,12 +3,16 @@ import Layout from "../../components/Layout"
 import * as styles from "../../styles/about.module.css"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 
 export default function About({ data }) {
   const profile = getImage(data.file)
 
   return (
     <Layout>
+      <Helmet>
+        <title>Abe Choi | About</title>
+      </Helmet>
       <div className={styles.about}>
         <div>
           <GatsbyImage image={profile} alt="profile-pic" />
