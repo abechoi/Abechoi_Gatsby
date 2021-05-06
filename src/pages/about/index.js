@@ -18,6 +18,7 @@ export default function About({ data }) {
             formats={["AUTO", "WEBP", "AVIF"]}
             placeholder="blurred"
             backgroundColor="#00FECA"
+            loading="eager"
           />
           <div>
             <p>Abraham Jong-Hae Choi</p>
