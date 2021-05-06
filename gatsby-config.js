@@ -7,11 +7,11 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
