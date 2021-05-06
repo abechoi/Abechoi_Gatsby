@@ -12,12 +12,7 @@ export default function About({ data }) {
       </Helmet>
       <div className={styles.about}>
         <div>
-          <StaticImage
-            src="../../images/profile2.png"
-            alt="profile-pic"
-            width={250}
-            height={250}
-          />
+          <StaticImage src="../../images/homepage.jpg" alt="profile-pic" />
           <div>
             <p>Abraham Jong-Hae Choi</p>
             <p>abraham.choi@icloud.com</p>
