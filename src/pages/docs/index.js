@@ -39,6 +39,11 @@ export const query = graphql`
         frontmatter {
           title
           slug
+          cardDate: date(formatString: "LL")
+          listDate: date(formatString: "M/D/YY")
+          tags
+          type
+          description
         }
         id
       }

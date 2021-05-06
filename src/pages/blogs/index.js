@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/blogs.module.css"
 import BlogCard from "../../components/BlogCard"
+import Sidebar from "../../components/Sidebar"
 
 export default function Blogs({ data }) {
   const blogs = data.allMarkdownRemark.nodes
@@ -21,17 +22,7 @@ export default function Blogs({ data }) {
             ))}
           </div>
         </div>
-        <div className={styles.side}>
-          <h4>By Time</h4>
-          {blogs.map(blog => (
-            <Link to={"/blogs/" + blog.frontmatter.slug} key={blog.id}>
-              <div className={styles.sideLink}>
-                <p>{blog.frontmatter.listDate}</p>
-                <p>{blog.frontmatter.title}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <Sidebar markdowns={blogs} />
       </section>
     </Layout>
   )
@@ -50,6 +41,7 @@ export const query = graphql`
           cardDate: date(formatString: "LL")
           listDate: date(formatString: "M/D/YY")
           tags
+          type
           description
         }
         id

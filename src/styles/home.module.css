@@ -4,26 +4,26 @@
   color: #20232a;
   height: calc(100vh - 100px);
 }
-.header div:nth-child(1) {
+.header .homeContainer {
   position: relative;
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
   top: 20%;
 }
-.header h2 {
+.homeContainer h2 {
   font-size: 4em;
 }
-.header h3 {
+.homeContainer h3 {
   font-size: 3em;
   font-weight: 400;
   margin: 0;
 }
-.header p {
+.homeContainer p {
   margin-left: 4px;
 }
 
-.header a {
+.homeContainer a {
   display: inline-block;
   padding: 10px 16px;
   border-radius: 10px;
@@ -32,34 +32,73 @@
   font-weight: 600;
   background: #20232a;
 }
-.header a:nth-of-type(1) {
+.homeContainer a:nth-of-type(1) {
   color: #7b61f8;
   border: 3px solid #7b61f8;
 }
-.header a:nth-of-type(1):hover {
+.homeContainer a:nth-of-type(1):hover {
   background-color: #00feca;
 }
-.header a:nth-of-type(2) {
+.homeContainer a:nth-of-type(2) {
   color: #61dbfb;
   border: 3px solid #61dbfb;
 }
-.header a:nth-of-type(2):hover {
+.homeContainer a:nth-of-type(2):hover {
   background-color: #ff85ea;
 }
-.header a:hover {
+.homeContainer a:hover {
   color: #20232a;
   border: 3px solid #20232a;
 }
-.header div:nth-child(2) {
+.homeContainer div:nth-child(2) {
   margin: 25px auto;
   height: 100%;
   margin: 0;
   padding: 20px 25px;
   border-left: 4px solid #20232a;
 }
-.header div:nth-child(2) p:nth-child(1) {
+.homeContainer div:nth-child(2) p:nth-child(1) {
   font-size: 25px;
   font-weight: 600;
   text-align: center;
   border-bottom: 4px solid #20232a;
+}
+
+/* Side Panel */
+.side {
+  margin: 25px auto;
+  height: 100%;
+  margin: 0;
+  padding: 20px 25px;
+  border-left: 4px solid #20232a;
+}
+.side h4 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 4px solid #20232a;
+}
+.side a {
+  text-decoration: none;
+  border: none;
+}
+
+.sideLink {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  border: 2px solid #20232a;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.sideLink p {
+  margin: 5px 10px;
+  color: #20232a;
+}
+.sideLink:hover {
+  background-color: #20232a;
+}
+.sideLink:hover p {
+  color: #00feca;
 }
