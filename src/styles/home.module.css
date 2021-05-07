@@ -108,15 +108,9 @@
     display: grid;
     grid-template-columns: 1fr;
     color: #20232a;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 200px);
   }
-  .header .homeContainer {
-    top: 10%;
-    width: fit-content;
-    border: solid 1px black;
-    margin: 0;
-  }
-  .side {
+  .homeContainer {
     display: none;
   }
 }

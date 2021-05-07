@@ -9,8 +9,7 @@
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
   color: #20232a;
   background-color: #20232a;
 }
@@ -61,17 +60,16 @@ nav {
   color: #fdf200;
 }
 nav .links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
   margin: auto auto;
   font-size: 20px;
 }
 nav .links a {
+  display: inline-block;
   font-weight: 600;
   margin: 0 20px;
   padding-bottom: 8px;
   border-bottom: 3px solid transparent;
-  width: fit-content;
 }
 nav .links a:nth-child(1) {
   color: #00feca;
@@ -180,7 +178,49 @@ footer a {
   background-color: #20232a;
 }
 
+/* Side Panel */
+.side {
+  margin: 25px auto;
+  height: 100%;
+  margin: 0;
+  padding: 20px 25px;
+  border-left: 4px solid #20232a;
+}
+.side h4 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 4px solid #20232a;
+}
+.side a {
+  text-decoration: none;
+}
+
+.sideLink {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  border: 2px solid #20232a;
+  border-radius: 8px;
+}
+.sideLink p {
+  margin: 5px 10px;
+  color: #20232a;
+}
+.sideLink:hover {
+  background-color: #20232a;
+}
+.sideLink:hover p {
+  color: #00feca;
+}
+
 @media only screen and (max-width: 600px) {
+  .banner {
+    margin-top: 10px;
+    width: fit-content;
+    text-align: center;
+  }
   nav {
     display: grid;
     grid-template-columns: 1fr;
@@ -189,16 +229,20 @@ footer a {
     width: 100% !important;
     height: 200px;
   }
+
   nav .links a:nth-of-type(1) {
+    /* HOME link removed */
     display: none;
   }
   nav .links {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 0 50px;
     margin: 10px auto;
   }
   nav .links a {
     font-weight: 600;
-    margin: 10px 20px;
+    margin: 10px auto;
     padding-bottom: 8px;
     border-bottom: 3px solid transparent;
     width: fit-content;
@@ -207,12 +251,12 @@ footer a {
     display: none;
   }
   footer {
-    height: 1000px;
+    height: 70vh;
   }
   .footer-content {
+    padding-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100%;
   }
   .footer-content div {
     margin: 0 auto;

@@ -26,7 +26,9 @@ export default function Blogs({ data }) {
             ))}
           </div>
         </div>
-        <Sidebar markdowns={blogs} />
+        <div className={styles.blogSide}>
+          <Sidebar markdowns={blogs} />
+        </div>
       </section>
     </Layout>
   )
