@@ -63,7 +63,7 @@ export const query = graphql`
   query Profile {
     file(relativePath: { eq: "profile.png" }) {
       childImageSharp {
-        gatsbyImageData(formats: [AUTO, WEBP, AVIF], placeholder: BLURRED)
+        gatsbyImageData(formats: [AUTO, WEBP, AVIF])
       }
     }
   }
