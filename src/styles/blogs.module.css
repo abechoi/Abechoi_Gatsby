@@ -113,3 +113,31 @@
 .sideLink:hover p {
   color: #00feca;
 }
+
+@media only screen and (max-width: 600px) {
+  .blogsContainer > h2 {
+    font-size: 2em;
+  }
+  .blogsContainer > h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  .blogs {
+    margin: 20px auto;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+  }
+  .blog {
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #20232a;
+    width: 325px;
+    padding: 5px 10px;
+  }
+  .side {
+    display: none;
+  }
+}

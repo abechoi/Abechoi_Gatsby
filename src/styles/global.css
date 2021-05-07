@@ -9,7 +9,8 @@
 
 html,
 body {
-  min-height: 100%;
+  height: 100%;
+  width: 100%;
   color: #20232a;
   background-color: #20232a;
 }
@@ -60,17 +61,17 @@ nav {
   color: #fdf200;
 }
 nav .links {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin: auto auto;
   font-size: 20px;
 }
 nav .links a {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   font-weight: 600;
   margin: 0 20px;
   padding-bottom: 8px;
   border-bottom: 3px solid transparent;
+  width: fit-content;
 }
 nav .links a:nth-child(1) {
   color: #00feca;
@@ -185,13 +186,44 @@ footer a {
     grid-template-columns: 1fr;
     margin: 0 auto;
     background-color: #20232a;
-    width: 100%;
-    height: 100px;
+    width: 100% !important;
+    height: 200px;
+  }
+  nav .links a:nth-of-type(1) {
+    display: none;
   }
   nav .links {
     grid-template-columns: 1fr 1fr;
+    margin: 10px auto;
+  }
+  nav .links a {
+    font-weight: 600;
+    margin: 10px 20px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+    width: fit-content;
   }
   nav .icons {
     display: none;
+  }
+  footer {
+    height: 1000px;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+  .footer-content div {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-content div:nth-child(3) {
+    transform: translateX(50%);
+  }
+  .footer-content .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
