@@ -1,13 +1,10 @@
 import React from "react"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/about.module.css"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import Helmet from "react-helmet"
 
-export default function About({ data }) {
-  const profile = getImage(data.file)
-
+export default function About() {
   return (
     <Layout>
       <Helmet>
@@ -15,7 +12,7 @@ export default function About({ data }) {
       </Helmet>
       <div className={styles.about}>
         <div>
-          <GatsbyImage image={profile} alt="profile-pic" />
+          <StaticImage src="../../images/profile.png" alt="profile-pic" />
           <div>
             <p>Abraham Jong-Hae Choi</p>
             <p>abraham.choi@icloud.com</p>
@@ -58,13 +55,3 @@ export default function About({ data }) {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query Profile {
-    file(relativePath: { eq: "profile.png" }) {
-      childImageSharp {
-        gatsbyImageData(formats: [AUTO, WEBP, AVIF])
-      }
-    }
-  }
-`

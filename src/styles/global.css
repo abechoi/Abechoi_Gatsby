@@ -65,7 +65,8 @@ nav .links {
   font-size: 20px;
 }
 nav .links a {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   font-weight: 600;
   margin: 0 20px;
   padding-bottom: 8px;
@@ -176,4 +177,21 @@ footer a {
 .footer-content .icons h2:hover {
   color: #00feca;
   background-color: #20232a;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    background-color: #20232a;
+    width: 100%;
+    height: 100px;
+  }
+  nav .links {
+    grid-template-columns: 1fr 1fr;
+  }
+  nav .icons {
+    display: none;
+  }
 }
