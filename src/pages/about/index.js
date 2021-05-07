@@ -16,7 +16,6 @@ export default function About({ data }) {
             src="../../images/homepage.jpg"
             alt="profile-pic"
             formats={["AUTO", "WEBP", "AVIF"]}
-            placeholder="blurred"
             backgroundColor="#00FECA"
             loading="eager"
           />
