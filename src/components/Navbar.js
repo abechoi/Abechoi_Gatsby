@@ -28,8 +28,8 @@ export default function Navbar() {
         <Link
           to="/blogs"
           activeStyle={{
-            color: "var(--pink)",
-            borderBottom: "3px solid var(--pink)",
+            color: "var(--teal)",
+            borderBottom: "3px solid var(--teal)",
           }}
         >
           BLOGS
@@ -37,8 +37,8 @@ export default function Navbar() {
         <Link
           to="/projects"
           activeStyle={{
-            color: "var(--blue)",
-            borderBottom: "3px solid var(--blue)",
+            color: "var(--purple)",
+            borderBottom: "3px solid var(--purple)",
           }}
         >
           PROJECTS
@@ -46,8 +46,8 @@ export default function Navbar() {
         <Link
           to="/docs"
           activeStyle={{
-            color: "var(--purple)",
-            borderBottom: "3px solid var(--purple)",
+            color: "var(--blue)",
+            borderBottom: "3px solid var(--blue)",
           }}
         >
           DOCS
@@ -55,8 +55,8 @@ export default function Navbar() {
         <Link
           to="/about"
           activeStyle={{
-            color: "var(--teal)",
-            borderBottom: "3px solid var(--teal)",
+            color: "var(--pink)",
+            borderBottom: "3px solid var(--pink)",
           }}
         >
           ABOUT

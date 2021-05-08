@@ -79,38 +79,44 @@ nav .links {
   width: fit-content;
   margin: 10px auto;
 }
-/* Remove Home link*/
-nav .links a:nth-child(1) {
-  display: none;
-}
+
 nav .links a {
   text-align: center;
   font-size: 1.5em;
+}
+/* Remove Home link*/
+nav .links a:nth-child(1) {
+  display: none;
+  color: var(--yellow);
+}
+nav .links a:nth-child(1):hover {
+  border-bottom: 3px solid var(--yellow);
 }
 nav .links a:nth-child(2) {
   color: var(--teal);
 }
 nav .links a:nth-child(2):hover {
-  color: var(--pink);
+  border-bottom: 3px solid var(--teal);
 }
 nav .links a:nth-child(3) {
   color: var(--purple);
 }
 nav .links a:nth-child(3):hover {
-  color: var(--blue);
+  border-bottom: 3px solid var(--purple);
 }
 nav .links a:nth-child(4) {
   color: var(--blue);
 }
 nav .links a:nth-child(4):hover {
-  color: var(--purple);
+  border-bottom: 3px solid var(--blue);
 }
 nav .links a:nth-child(5) {
   color: var(--pink);
 }
 nav .links a:nth-child(5):hover {
-  color: var(--teal);
+  border-bottom: 3px solid var(--pink);
 }
+
 nav .icons {
   display: none;
 }
@@ -185,6 +191,9 @@ footer {
 .footer-content .icons h2 svg {
   text-align: center;
 }
+.banner-container p {
+  margin: 20px;
+}
 
 @media only screen and (min-width: 400px) {
   nav .links {
@@ -213,10 +222,66 @@ footer {
   }
 }
 @media only screen and (min-width: 700px) {
+  nav .links a {
+    font-weight: 600;
+  }
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .icon-container {
+    margin: auto auto;
+  }
+  .banner-container {
+    margin: 50px;
+  }
 }
 
 @media only screen and (min-width: 960px) {
+  nav {
+    grid-template-columns: 1fr 5fr;
+    height: 100px;
+  }
+  nav .banner {
+    margin: auto;
+  }
+  nav .links {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+  }
+  nav .links a:nth-of-type(1) {
+    display: initial;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
+  nav {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  nav .links {
+    grid-gap: 20px 40px;
+  }
+  nav .icons {
+    display: initial;
+  }
+  nav .icons {
+    margin: auto auto;
+    display: flex;
+  }
+  nav .icons h2 {
+    margin: 5px;
+    text-align: center;
+    color: #20232a;
+    background-color: #00feca;
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+  }
+  nav .icons h2:hover {
+    color: var(--teal);
+    background-color: #20232a;
+  }
+  nav .icons a h2 {
+    line-height: 1.3;
+  }
 }

@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className="icon-container">
           <p>Developed with:</p>
           <div className="icons">
             <h2>
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="banner-container">
         <p>Developed by:</p>
         <Link to="/" className="banner">
           <h1>ABE</h1>
