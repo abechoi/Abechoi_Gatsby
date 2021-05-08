@@ -13,11 +13,10 @@ export default function About({ data }) {
       <div className={styles.about}>
         <div>
           <StaticImage
-            src="../../images/homepage.jpg"
+            src="../../images/profile.png"
             alt="profile-pic"
             formats={["AUTO", "WEBP", "AVIF"]}
             backgroundColor="#00FECA"
-            loading="eager"
           />
           <div>
             <p>Abraham Jong-Hae Choi</p>
