@@ -18,31 +18,46 @@ export default function Navbar() {
       <div className="links">
         <Link
           to="/"
-          activeStyle={{ color: "#ff85ea", borderBottom: "3px solid #ff85ea" }}
+          activeStyle={{
+            color: "var(--yellow)",
+            borderBottom: "3px solid var(--yellow)",
+          }}
         >
           HOME
         </Link>
         <Link
           to="/blogs"
-          activeStyle={{ color: "#61dbfb", borderBottom: "3px solid #61dbfb" }}
+          activeStyle={{
+            color: "var(--pink)",
+            borderBottom: "3px solid var(--pink)",
+          }}
         >
           BLOGS
         </Link>
         <Link
           to="/projects"
-          activeStyle={{ color: "#00feca", borderBottom: "3px solid #00feca" }}
+          activeStyle={{
+            color: "var(--blue)",
+            borderBottom: "3px solid var(--blue)",
+          }}
         >
           PROJECTS
         </Link>
         <Link
           to="/docs"
-          activeStyle={{ color: "#7b61f8", borderBottom: "3px solid #7b61f8" }}
+          activeStyle={{
+            color: "var(--purple)",
+            borderBottom: "3px solid var(--purple)",
+          }}
         >
           DOCS
         </Link>
         <Link
           to="/about"
-          activeStyle={{ color: "#fdf200", borderBottom: "3px solid #fdf200" }}
+          activeStyle={{
+            color: "var(--teal)",
+            borderBottom: "3px solid var(--teal)",
+          }}
         >
           ABOUT
         </Link>

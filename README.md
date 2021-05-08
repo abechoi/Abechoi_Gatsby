@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7203e525-755b-4616-8423-166162352a0a/deploy-status)](https://app.netlify.com/sites/agitated-fermat-2a5f2b/deploys)[![Netlify Status](https://api.netlify.com/api/v1/badges/7203e525-755b-4616-8423-166162352a0a/deploy-status)](https://app.netlify.com/sites/agitated-fermat-2a5f2b/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7203e525-755b-4616-8423-166162352a0a/deploy-status)](https://app.netlify.com/sites/agitated-fermat-2a5f2b/deploys)
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">

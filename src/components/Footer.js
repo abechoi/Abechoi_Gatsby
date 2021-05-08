@@ -11,19 +11,22 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-content">
-        <div>
-          <h1>SECTION</h1>
-          <Link to="/blogs">Blogs</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/docs">Docs</Link>
-          <Link to="/about">About</Link>
+        <div className="footer-links">
+          <div>
+            <h1>SECTION</h1>
+            <Link to="/blogs">Blogs</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/docs">Docs</Link>
+            <Link to="/about">About</Link>
+          </div>
+          <div>
+            <h1>SOCIAL</h1>
+            <a href="https://github.com/abechoi">Github</a>
+            <a href="https://codepen.io/collection/DjaJdx">Codepen</a>
+            <a href="https://www.linkedin.com/in/abrahamjchoi/">LinkedIn</a>
+          </div>
         </div>
-        <div>
-          <h1>SOCIAL</h1>
-          <a href="https://github.com/abechoi">Github</a>
-          <a href="https://codepen.io/collection/DjaJdx">Codepen</a>
-          <a href="https://www.linkedin.com/in/abrahamjchoi/">LinkedIn</a>
-        </div>
+
         <div>
           <p>Developed with:</p>
           <div className="icons">

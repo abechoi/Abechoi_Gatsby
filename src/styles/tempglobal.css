@@ -1,0 +1,222 @@
+:root {
+  --blue: #61dbfb;
+  --pink: #ff85ea;
+  --yellow: #fdf200;
+  --teal: #00feca;
+  --purple: #7b61f8;
+  --black: #20232a;
+  --white: #fff;
+}
+
+/* reset */
+body,
+p,
+a,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+h1 {
+  font-size: 1.5em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* base styles*/
+html {
+  color: var(--black);
+  background-color: var(--black);
+}
+body {
+  background-color: var(--white);
+}
+
+/* Layout */
+.layout {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  position: sticky;
+}
+.content {
+  height: 100%;
+  z-index: -1;
+  position: sticky;
+}
+/* Navbar */
+nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  background-color: var(--black);
+  width: 100%;
+  height: 175px;
+}
+/* Abe Choi Logo */
+.banner {
+  margin: 10px auto 0 auto;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}
+.banner h1:nth-child(1) {
+  color: var(--blue);
+}
+.banner h1:nth-child(2) {
+  color: var(--pink);
+}
+.banner h1:hover {
+  color: var(--yellow);
+}
+nav .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: fit-content;
+  margin: 10px auto;
+}
+/* Remove Home link*/
+nav .links a:nth-child(1) {
+  display: none;
+}
+nav .links a {
+  text-align: center;
+  font-size: 1.5em;
+}
+nav .links a:nth-child(2) {
+  color: var(--teal);
+}
+nav .links a:nth-child(2):hover {
+  color: var(--pink);
+}
+nav .links a:nth-child(3) {
+  color: var(--purple);
+}
+nav .links a:nth-child(3):hover {
+  color: var(--blue);
+}
+nav .links a:nth-child(4) {
+  color: var(--blue);
+}
+nav .links a:nth-child(4):hover {
+  color: var(--purple);
+}
+nav .links a:nth-child(5) {
+  color: var(--pink);
+}
+nav .links a:nth-child(5):hover {
+  color: var(--teal);
+}
+nav .icons {
+  display: none;
+}
+/* Footer */
+footer {
+  color: var(--white);
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+.footer-content h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 5px auto;
+}
+.footer-content a {
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--white) !important;
+}
+/* Footer Links */
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+}
+.footer-links div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links div:nth-of-type(1) h1 {
+  color: var(--teal);
+}
+.footer-links div:nth-of-type(2) h1 {
+  color: var(--purple);
+}
+.footer-links div a {
+  margin: 3px auto;
+}
+/* Footer Icons */
+.footer-content .icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 20px auto;
+  width: fit-content;
+}
+.footer-content .icons h2 {
+  font-size: 40px;
+  border-radius: 3px;
+  padding: 2px;
+  color: var(--black);
+  background-color: var(--teal);
+}
+.footer-content .icons h2:hover {
+  color: var(--teal);
+  background-color: var(--black);
+}
+
+.footer-content .icons h2 svg {
+  text-align: center;
+}
+
+@media only screen and (min-width: 400px) {
+  nav .links {
+    grid-gap: 20px 40px;
+  }
+  .footer-links div a {
+    margin: 7px auto;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  nav {
+    height: 125px;
+  }
+  nav .links {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 20px;
+  }
+  nav .links a {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+  .footer-links div a {
+    margin: 7px auto;
+  }
+}
+@media only screen and (min-width: 700px) {
+}
+
+@media only screen and (min-width: 960px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
