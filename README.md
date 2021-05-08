@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7203e525-755b-4616-8423-166162352a0a/deploy-status)](https://app.netlify.com/sites/agitated-fermat-2a5f2b/deploys)[![Netlify Status](https://api.netlify.com/api/v1/badges/7203e525-755b-4616-8423-166162352a0a/deploy-status)](https://app.netlify.com/sites/agitated-fermat-2a5f2b/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
@@ -5,12 +7,12 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  My Gatsby Website: AbeChoi.com! 
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This is my first Gatsby project, and my second portfolio site. Overall it's been very pleasant, I learned a lot and I'm really glad I decided to choose this framework. Deploying this site was actually the most troublesome part about it. I tried using AWS Amplify, but the images won't load, so I tried asking around stack overflow, their github, and read a bunch of docs but nothing helped. Then I tried AWS S3, still no luck. So, I decided to use Netlify and configured all my DNS records to my app there.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+_Check out my site, [click here!](http://www.abechoi.com)._
 
 ## 🚀 Quick start
 
