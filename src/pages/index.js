@@ -1,7 +1,7 @@
 import { Link, graphql } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout.js"
-import * as styles from "../styles/temp.module.css"
+import * as styles from "../styles/home.module.css"
 import Sidebar from "../components/Sidebar"
 import Helmet from "react-helmet"
 

@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../components/Layout"
-import * as styles from "../../styles/about.module.css"
+import * as styles from "../../styles/temp.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 import Helmet from "react-helmet"
 
@@ -26,7 +26,7 @@ export default function About() {
             <p>USAF Veteran</p>
           </div>
         </div>
-        <div>
+        <div className={styles.aboutContent}>
           <h2>Hello, World!</h2>
           <p>
             My name is Abraham Choi, and my Korean name is Choi Jong-Hae. I was
