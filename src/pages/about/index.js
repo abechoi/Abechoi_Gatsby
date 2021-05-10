@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../components/Layout"
-import * as styles from "../../styles/temp.module.css"
+import * as styles from "../../styles/about.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 import Helmet from "react-helmet"
 

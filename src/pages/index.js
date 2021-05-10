@@ -11,7 +11,7 @@ export default function Home({ data }) {
   return (
     <Layout>
       <Helmet>
-        <title>Abe Choi | Gatsby</title>
+        <title>Abe Choi | Home</title>
       </Helmet>
       <section className={styles.header}>
         <div className={styles.homeContainer}>

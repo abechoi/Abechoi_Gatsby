@@ -8,6 +8,7 @@ export default function BlogDetails({ data }) {
   const { html } = data.markdownRemark
   const { title } = data.markdownRemark.frontmatter
   const { date } = data.markdownRemark.frontmatter
+  const { tags } = data.markdownRemark.frontmatter
 
   return (
     <Layout>
@@ -17,6 +18,9 @@ export default function BlogDetails({ data }) {
       <div className={styles.details}>
         <h2>{title}</h2>
         <h3>{date}</h3>
+        <div className={styles.tags}>
+          {tags && tags.map((tag, id) => <p key={id}>{tag}</p>)}
+        </div>
         <div
           className={styles.html}
           dangerouslySetInnerHTML={{ __html: html }}
@@ -32,6 +36,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        tags
         date(formatString: "MMMM D, YYYY")
       }
     }
