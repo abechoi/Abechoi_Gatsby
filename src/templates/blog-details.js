@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
 export default function BlogDetails({ data }) {
+  // test
   const { html } = data.markdownRemark
   const { title } = data.markdownRemark.frontmatter
   const { date } = data.markdownRemark.frontmatter
