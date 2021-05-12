@@ -1,7 +1,7 @@
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  color: #20232a;
+  color: var(--black);
   height: 100%;
 }
 .homeContainer {
@@ -13,13 +13,13 @@
   height: 100%;
   margin: 0;
   padding: 20px 10px;
-  border-left: 4px solid #20232a;
+  border-left: 4px solid var(--black);
 }
 .side h4 {
   font-size: 25px;
   font-weight: 600;
   text-align: center;
-  border-bottom: 4px solid #20232a;
+  border-bottom: 4px solid var(--black);
 }
 .side a {
   text-decoration: none;
@@ -32,26 +32,23 @@
   justify-content: space-between;
   width: 100%;
   padding: 0;
-  border: 2px solid #20232a;
-  background-color: #fff;
+  border: 2px solid var(--black);
+  background-color: var(--white);
   border-radius: 8px;
 }
 .sideLink p {
   margin: 5px 10px;
-  color: #20232a;
+  color: var(--black);
 }
 .sideLink:hover {
-  background-color: #20232a;
+  background-color: var(--black);
 }
 .sideLink:hover p {
   color: #00feca;
 }
 @media only screen and (min-width: 300px) {
   .side {
-    margin: 25px auto;
-    height: 100%;
-    margin: 0;
-    border-left: 4px solid #20232a;
+    padding: 20px 20px;
   }
   .sideLink p {
     font-size: 18px;
@@ -60,6 +57,9 @@
 }
 
 @media only screen and (min-width: 360px) {
+  .side {
+    padding: 20px 20px;
+  }
   .sideLink p {
     font-size: 22px;
   }

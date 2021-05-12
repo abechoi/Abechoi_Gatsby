@@ -12,7 +12,6 @@ const BlogCard = ({ blog }) => {
         {blog.frontmatter.tags &&
           blog.frontmatter.tags.map((tag, id) => <p key={id}>{tag}</p>)}
       </div>
-      <p>{blog.frontmatter.description}</p>
     </div>
   )
 }

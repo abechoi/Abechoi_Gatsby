@@ -48,7 +48,6 @@ export const query = graphql`
           listDate: date(formatString: "M/D/YY")
           tags
           type
-          description
         }
         id
       }
