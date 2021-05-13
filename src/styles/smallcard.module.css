@@ -1,0 +1,63 @@
+/* Small Card */
+.card {
+  display: block;
+  border-radius: 8px;
+  border: 2px solid #20232a;
+  width: 240px;
+  padding: 5px 10px;
+}
+.card div:nth-child(1) {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card div:nth-child(1) h3 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.tags {
+  display: flex;
+  margin: 10px 0;
+  justify-content: left;
+  text-align: center;
+  width: fit-content;
+}
+
+.tags p {
+  margin: 0 3px 0 0;
+  width: 70px;
+  border-radius: 8px;
+}
+.tags p:nth-child(1) {
+  border: 2px solid var(--blue);
+  background-color: var(--black);
+  color: var(--blue);
+}
+.card:hover .tags p:nth-child(1) {
+  background-color: var(--blue);
+  color: var(--black);
+  border-color: var(--black);
+}
+.tags p:nth-child(2) {
+  border: 2px solid var(--yellow);
+  background-color: var(--black);
+  color: var(--yellow);
+}
+.card:hover .tags p:nth-child(2) {
+  background-color: var(--yellow);
+  color: var(--black);
+  border-color: var(--black);
+}
+.tags p:nth-child(3) {
+  border: 2px solid var(--pink);
+  background-color: var(--black);
+  color: var(--pink);
+}
+.card:hover .tags p:nth-child(3) {
+  background-color: var(--pink);
+  color: var(--black);
+  border-color: var(--black);
+}

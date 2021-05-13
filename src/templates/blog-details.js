@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/blog-details.module.css"
+import * as smallcard from "../styles/smallcard.module.css"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
@@ -18,7 +19,7 @@ export default function BlogDetails({ data }) {
       <div className={styles.details}>
         <h2>{title}</h2>
         <h3>{date}</h3>
-        <div className={styles.tags}>
+        <div className={smallcard.tags}>
           {tags && tags.map((tag, id) => <p key={id}>{tag}</p>)}
         </div>
         <div

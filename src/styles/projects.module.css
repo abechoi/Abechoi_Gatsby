@@ -12,12 +12,9 @@
 }
 .projContainer > h2 {
   display: none;
-  font-size: 2em;
 }
 .projContainer > h3 {
   display: none;
-  font-size: 1.5em;
-  font-weight: 400;
 }
 .projects {
   display: grid;
@@ -89,12 +86,12 @@
   }
   .projContainer > h2 {
     display: initial;
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .projContainer > h3 {
     display: initial;
-    font-size: 1.5em;
-    font-weight: 400;
+    font-size: 1.8em;
+    font-weight: 100;
   }
 }
 
@@ -102,15 +99,6 @@
   .projects {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 20px;
-  }
-  .projContainer > h2 {
-    display: initial;
-    font-size: 2em;
-  }
-  .projContainer > h3 {
-    display: initial;
-    font-size: 1.5em;
-    font-weight: 400;
   }
   .project {
     height: fit-content;
