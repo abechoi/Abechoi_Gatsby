@@ -1,22 +1,29 @@
-.portfolio {
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: var(--black);
+  height: 100%;
+}
+.projContainer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  padding-top: 40px;
-  color: #20232a;
+  padding: 40px 0;
 }
-.portfolio > h2 {
-  display: none;
-  font-size: 3em;
-}
-.portfolio > h3 {
+.projContainer > h2 {
   display: none;
   font-size: 2em;
+}
+.projContainer > h3 {
+  display: none;
+  font-size: 1.5em;
   font-weight: 400;
 }
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px;
-  margin: 80px 20px;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 0 20px;
 }
 .projects h3 {
   text-align: center;
@@ -24,28 +31,88 @@
   font-weight: 500;
 }
 .projects p {
-  color: #20232a;
+  color: var(--black);
   margin-top: 4px;
 }
 
 .projects a {
-  color: #20232a;
+  color: var(--black);
 }
 
-@media only screen and (max-width: 600px) {
-  .portfolio > h2 {
+/* Blog Card */
+.project {
+  display: block;
+  border-radius: 8px;
+  border: 4px solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
+  height: 100%;
+}
+.project div:nth-child(1) {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  width: 100%;
+  height: 70%;
+}
+
+.project div:nth-child(1) h3 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.tags {
+  display: flex;
+  margin: 10px auto;
+  justify-content: left;
+  width: fit-content;
+}
+
+.tags p {
+  margin: 0 3px 0 0;
+  width: 70px;
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+  background-color: var(--black);
+  color: var(--blue);
+}
+.project:hover .tags p {
+  background-color: var(--pink);
+  color: var(--black);
+  border-color: var(--black);
+}
+
+@media only screen and (min-width: 760px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+  }
+  .projContainer > h2 {
+    display: initial;
     font-size: 2em;
   }
-  .portfolio > h3 {
+  .projContainer > h3 {
+    display: initial;
     font-size: 1.5em;
     font-weight: 400;
   }
+}
 
+@media only screen and (min-width: 1200px) {
   .projects {
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0;
-    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+  }
+  .projContainer > h2 {
+    display: initial;
+    font-size: 2em;
+  }
+  .projContainer > h3 {
+    display: initial;
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  .project {
+    height: fit-content;
   }
 }

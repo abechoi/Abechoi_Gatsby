@@ -2,8 +2,8 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/projects.module.css"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Helmet from "react-helmet"
+import BigCard from "../../components/BigCard"
 
 export default function Projects({ data }) {
   const projects = data.allMarkdownRemark.nodes
@@ -13,23 +13,22 @@ export default function Projects({ data }) {
       <Helmet>
         <title>Abe Choi | Projects</title>
       </Helmet>
-      <div className={styles.portfolio}>
-        <h2>Portfolio</h2>
-        <h3>Projects & Websites I've Created</h3>
-        <div className={styles.projects}>
-          {projects.map(project => (
-            <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
-              <div>
-                <GatsbyImage
-                  image={getImage(project.frontmatter.thumb)}
-                  alt="gatsbyImage"
-                />
-                <h3>{project.frontmatter.title}</h3>
-              </div>
-            </Link>
-          ))}
+      <section className={styles.header}>
+        <div className={styles.projContainer}>
+          <h2>Portfolio</h2>
+          <h3>Projects & Websites I've Created</h3>
+          <div className={styles.projects}>
+            {projects.map(project => (
+              <Link
+                to={"/projects/" + project.frontmatter.slug}
+                key={project.id}
+              >
+                <BigCard data={project} />
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }
@@ -44,6 +43,7 @@ export const query = graphql`
         frontmatter {
           title
           slug
+          tags
           thumb {
             childImageSharp {
               gatsbyImageData(
