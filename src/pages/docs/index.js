@@ -12,23 +12,25 @@ export default function Docs({ data }) {
       <Helmet>
         <title>Abe Choi | Docs</title>
       </Helmet>
-      <div className={styles.docsContainer}>
-        <h2>Docs</h2>
-        <h3>My Technical Documentations</h3>
-        {docs.length === 0 ? (
-          <p>There are no docs at the moment</p>
-        ) : (
-          <div className={styles.docs}>
-            {docs.map(doc => (
-              <Link to={"/docs/" + doc.frontmatter.slug} key={doc.id}>
-                <div>
-                  <h3>{doc.frontmatter.title}</h3>
-                </div>
-              </Link>
-            ))}
-          </div>
-        )}
-      </div>
+      <section className={styles.header}>
+        <div className={styles.docsContainer}>
+          <h2>Docs</h2>
+          <h3>My Technical Documentations</h3>
+          {docs.length === 0 ? (
+            <p>There are no docs at the moment</p>
+          ) : (
+            <div className={styles.docs}>
+              {docs.map(doc => (
+                <Link to={"/docs/" + doc.frontmatter.slug} key={doc.id}>
+                  <div>
+                    <h3>{doc.frontmatter.title}</h3>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
     </Layout>
   )
 }

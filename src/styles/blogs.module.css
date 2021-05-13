@@ -2,26 +2,30 @@
   display: grid;
   grid-template-columns: 1fr;
   color: #20232a;
-  height: 100%;
+  height: calc(100vh - 175px);
 }
 .blogsContainer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding-top: 40px;
-  color: #20232a;
 }
 .blogsContainer > h2 {
-  font-size: 3em;
+  display: none;
+  font-size: 2em;
 }
 .blogsContainer > h3 {
-  font-size: 2em;
+  display: none;
+  font-size: 1.5em;
   font-weight: 400;
 }
 .blogs {
   display: grid;
   grid-template-columns: 1fr;
   width: fit-content;
-  margin: 80px auto;
-  grid-gap: 20px;
+  height: fit-content;
+  margin: 0 auto;
+  grid-gap: 10px;
 }
 .blogs h3 {
   text-align: center;
@@ -80,14 +84,6 @@
 .blogSide {
   display: none;
 }
-@media only screen and (min-width: 360px) {
-  .header {
-    height: 100%;
-  }
-  .blog {
-    width: 300px;
-  }
-}
 
 @media only screen and (min-width: 410px) {
   .header {
@@ -98,7 +94,6 @@
   }
   .blogsContainer > h3 {
     font-size: 1.5em;
-    font-weight: 400;
   }
 
   .blogs {
@@ -110,16 +105,25 @@
     display: block;
     border-radius: 8px;
     border: 2px solid #20232a;
-    width: 340px;
+    width: 300px;
     padding: 5px 10px;
   }
 }
 @media only screen and (min-width: 760px) {
+  .header {
+    height: calc(100vh - 125px);
+  }
   .blogs {
     grid-template-columns: 1fr 1fr;
   }
-  .blog {
-    width: 300px;
+
+  .blogsContainer > h2 {
+    display: initial;
+    font-size: 2.5em;
+  }
+  .blogsContainer > h3 {
+    display: initial;
+    font-size: 1.8em;
   }
 }
 
@@ -127,7 +131,6 @@
   .header {
     grid-template-columns: 3fr 1fr;
   }
-
   .blogSide {
     display: initial;
   }

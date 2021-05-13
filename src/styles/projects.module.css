@@ -4,9 +4,11 @@
   color: #20232a;
 }
 .portfolio > h2 {
+  display: none;
   font-size: 3em;
 }
 .portfolio > h3 {
+  display: none;
   font-size: 2em;
   font-weight: 400;
 }
