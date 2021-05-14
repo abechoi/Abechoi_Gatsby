@@ -64,17 +64,25 @@ export default function Navbar() {
       </div>
 
       <div className="icons">
-        <a href="https://github.com/abechoi">
+        <a href="https://github.com/abechoi" target="_blank" rel="noreferrer">
           <h2>
             <FontAwesomeIcon icon={faGithubSquare} />
           </h2>
         </a>
-        <a href="https://codepen.io/collection/DjaJdx">
+        <a
+          href="https://codepen.io/collection/DjaJdx"
+          target="_blank"
+          rel="noreferrer"
+        >
           <h2>
             <FontAwesomeIcon icon={faCodepen} />
           </h2>
         </a>
-        <a href="https://www.linkedin.com/in/abrahamjchoi/">
+        <a
+          href="https://www.linkedin.com/in/abrahamjchoi/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <h2>
             <FontAwesomeIcon icon={faLinkedin} />
           </h2>

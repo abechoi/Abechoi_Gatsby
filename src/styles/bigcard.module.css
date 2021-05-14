@@ -1,4 +1,5 @@
 /* Big Card */
+
 .card {
   display: block;
   border-radius: 8px;
@@ -7,6 +8,7 @@
   color: var(--white);
   height: 100%;
 }
+
 .card div:nth-child(1) {
   display: flex;
   margin: 0;
@@ -18,6 +20,16 @@
 .card div:nth-child(1) h3 {
   margin: 5px 0;
   font-size: 16px;
+}
+
+.git {
+  border: 1px solid #d4d6d8;
+  border-radius: 5px;
+  color: var(--black);
+  background-color: #f6f8f9;
+  width: 80px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .tags {
@@ -32,31 +44,37 @@
   width: 70px;
   border-radius: 8px;
 }
+
 .tags p:nth-child(1) {
   border: 2px solid var(--teal);
   background-color: var(--black);
   color: var(--teal);
 }
+
 .card:hover .tags p:nth-child(1) {
   background-color: var(--teal);
   color: var(--black);
   border-color: var(--black);
 }
+
 .tags p:nth-child(2) {
   border: 2px solid var(--yellow);
   background-color: var(--black);
   color: var(--yellow);
 }
+
 .card:hover .tags p:nth-child(2) {
   background-color: var(--yellow);
   color: var(--black);
   border-color: var(--black);
 }
+
 .tags p:nth-child(3) {
   border: 2px solid var(--purple);
   background-color: var(--black);
   color: var(--purple);
 }
+
 .card:hover .tags p:nth-child(3) {
   background-color: var(--purple);
   color: var(--black);
