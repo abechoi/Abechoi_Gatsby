@@ -35,11 +35,20 @@
 .projects a {
   color: var(--black);
 }
+@media only screen and (min-width: 360px) {
+  .projContainer {
+    padding: 40px;
+  }
+}
 
 @media only screen and (min-width: 760px) {
   .projects {
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px;
+    grid-gap: 40px 10px;
+    padding: 10px;
+  }
+  .projContainer {
+    padding: 40px 0;
   }
   .projContainer > h2 {
     display: initial;
@@ -49,6 +58,12 @@
     display: initial;
     font-size: 1.8em;
     font-weight: 100;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .projects {
+    grid-gap: 40px 20px;
+    padding: 20px;
   }
 }
 

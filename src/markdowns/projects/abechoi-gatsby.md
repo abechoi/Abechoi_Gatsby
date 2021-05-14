@@ -14,7 +14,7 @@ git: "https://github.com/abechoi/abechoi_gatsby"
 
 ## Challenges
 
-&nbsp;&nbsp;&nbsp;&nbsp;During this project, there were two instances where I was stuck for hours and had to seek external help. My first major issue was not fetching my query properly, by it's alias name. I used markdownRemark instead of my alias, and someone on StackOverflow had corrected me. My second issue, I thought had to do with gatsby-plugin-image, as my images would not load when deployed, but would load just fine for gatsby develop and build/serve, but it was an AWS issue. For some reason AWS Amplify would not load my images, so I tried AWS S3, still no luck. I've asked Reddit, Facebook Groups, StackOverflow, and even AWS Amplify's Github page (and I still didn't get a response from them). I then simply deployed my app via Netlify and configured my records on AWS Route 53 to point there.
+&nbsp;&nbsp;&nbsp;&nbsp;During this project, there were two instances where I was stuck for hours and had to seek external help. My first major issue was not fetching my query properly, by it's alias name. I used markdownRemark instead of my alias, and someone on StackOverflow had corrected me. My second issue, I thought had to do with gatsby-plugin-image, as my images would not load when deployed, and would load just fine for gatsby develop and build/serve. This ended up being an AWS issue. For some reason AWS Amplify would not load my images, so I tried AWS S3, still no luck. I've asked Reddit, Facebook Groups, StackOverflow, and even AWS Amplify's Github page (and I still didn't get a response from them). I then simply deployed my app via Netlify and configured my records on AWS Route 53 to point there.
 
 ## Takeaways
 

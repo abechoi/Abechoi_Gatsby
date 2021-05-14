@@ -30,21 +30,21 @@
   line-height: 1.5;
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 320px) {
   .about div:nth-child(1) {
-    padding: 30px 30px 0 30px;
+    padding: 10px 30px;
   }
   .aboutContent {
-    width: 300px;
+    width: 260px;
   }
 }
-@media only screen and (min-width: 370px) {
-  .about div:nth-child(1) {
-    padding: 0;
-  }
+@media only screen and (min-width: 375px) {
   .about div:nth-child(1) div:nth-child(2) {
-    margin: 40px auto;
+    margin: 35px auto;
     font-size: 22px;
+  }
+  .aboutContent {
+    width: 320px;
   }
   .aboutContent h2 {
     font-size: 40px;
@@ -54,19 +54,13 @@
   }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 410px) {
   .about div:nth-child(1) {
-    padding: 20px 30px 0 30px;
+    padding: 40px 60px;
   }
   .about div:nth-child(1) div:nth-child(2) {
-    font-size: 16px;
-    line-height: 1.2;
-  }
-}
-
-@media only screen and (min-width: 400px) {
-  .about div:nth-child(1) div:nth-child(2) {
-    font-size: 28px;
+    font-size: 22px;
+    line-height: 1.4;
   }
   .aboutContent h2 {
     font-size: 40px;
@@ -75,19 +69,24 @@
     font-size: 22px;
   }
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 768px) {
   .about div:nth-child(1) {
     display: flex;
+    justify-content: space-between;
+    padding: 0;
   }
   .about div:nth-child(1) div:nth-child(1) {
     width: 50%;
-    margin: 20px 10px;
+    margin: 40px;
   }
   .about div:nth-child(1) div:nth-child(2) {
     width: 50%;
+    display: flex;
+    flex-direction: column;
   }
   .about div:nth-child(1) div:nth-child(2) p {
     margin: 10px;
+    width: fit-content;
   }
   .aboutContent {
     width: 600px;
@@ -97,9 +96,9 @@
     line-height: 1.8;
   }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
   .about div:nth-child(1) div:nth-child(1) {
-    margin: 20px;
+    margin: 40px 60px;
   }
   .about div:nth-child(1) div:nth-child(2) {
     margin: auto;
@@ -107,7 +106,7 @@
     width: fit-content;
   }
   .about div:nth-child(1) div:nth-child(2) p {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -131,6 +130,10 @@
   }
   .about div:nth-child(1) div:nth-child(2) {
     margin: 10px auto;
+  }
+  .about div:nth-child(1) div:nth-child(2) p {
+    font-size: 22px;
+    margin: 5px;
   }
   .about div:nth-child(2) {
     margin: 25px 100px;
