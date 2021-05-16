@@ -13,7 +13,7 @@ export default function Projects({ data }) {
       <Helmet>
         <title>Abe Choi | Projects</title>
       </Helmet>
-      <section className={styles.header}>
+      <section>
         <div className={styles.projContainer}>
           <h2>Portfolio</h2>
           <h3>Projects & Websites I've Created</h3>

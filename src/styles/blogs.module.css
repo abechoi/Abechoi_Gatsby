@@ -1,7 +1,4 @@
 .header {
-  display: grid;
-  grid-template-columns: 1fr;
-  color: #20232a;
   height: calc(100vh - 175px);
 }
 .blogsContainer {

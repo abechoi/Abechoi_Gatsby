@@ -1,6 +1,7 @@
 .about {
   display: grid;
   grid-template-columns: 1fr;
+  color: var(--black);
   height: 100%;
 }
 .about h2 {
@@ -36,6 +37,11 @@
   }
   .aboutContent {
     width: 260px;
+  }
+}
+@media only screen and (min-width: 360px) {
+  .about div:nth-child(1) {
+    padding: 10px 25px;
   }
 }
 @media only screen and (min-width: 375px) {

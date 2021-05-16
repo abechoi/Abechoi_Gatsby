@@ -42,11 +42,6 @@ body {
   z-index: 1;
   position: sticky;
 }
-.content {
-  height: 100%;
-  z-index: -1;
-  position: sticky;
-}
 /* Navbar */
 nav {
   display: grid;
@@ -120,6 +115,12 @@ nav .links a:nth-child(5):hover {
 
 nav .icons {
   display: none;
+}
+/* Content */
+.content {
+  height: 100%;
+  z-index: -1;
+  position: sticky;
 }
 /* Footer */
 footer {

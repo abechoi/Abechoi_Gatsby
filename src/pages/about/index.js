@@ -10,7 +10,7 @@ export default function About() {
       <Helmet>
         <title>Abe Choi | About</title>
       </Helmet>
-      <div className={styles.about}>
+      <section className={styles.about}>
         <div>
           <StaticImage
             src="../../images/profile.png"
@@ -54,7 +54,7 @@ export default function About() {
             strive to be better each day, I'll get there one day.
           </p>
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }
