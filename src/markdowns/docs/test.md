@@ -1,7 +1,7 @@
 ---
-title: My First Blog
-slug: my-first-blog
-type: blog
+title: Test
+slug: test
+type: doc
 date: 2020-07-24
 tags: ["react"]
 description: "Welcome to my new site!"

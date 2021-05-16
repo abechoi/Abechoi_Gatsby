@@ -4,6 +4,7 @@
   border-radius: 8px;
   border: 2px solid var(--black);
   width: 240px;
+  height: 70px;
   padding: 5px 10px;
 }
 .card div:nth-child(1) {

@@ -1,34 +1,33 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
-import * as styles from "../../styles/docs.module.css"
+import * as styles from "../../styles/content.module.css"
+import SmallCard from "../../components/SmallCard"
+import Sidebar from "../../components/Sidebar"
 import Helmet from "react-helmet"
 
 export default function Docs({ data }) {
-  const docs = data.allMarkdownRemark.nodes
+  const blogs = data.allMarkdownRemark.nodes
 
   return (
     <Layout>
       <Helmet>
-        <title>Abe Choi | Docs</title>
+        <title>Abe Choi | Blogs</title>
       </Helmet>
       <section className={styles.header}>
-        <div className={styles.docsContainer}>
-          <h2>Docs</h2>
-          <h3>My Technical Documentations</h3>
-          {docs.length === 0 ? (
-            <p>There are no docs at the moment</p>
-          ) : (
-            <div className={styles.docs}>
-              {docs.map(doc => (
-                <Link to={"/docs/" + doc.frontmatter.slug} key={doc.id}>
-                  <div>
-                    <h3>{doc.frontmatter.title}</h3>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          )}
+        <div className={styles.page}>
+          <h2>Blogs</h2>
+          <h3>My News & Updates</h3>
+          <div className={styles.container}>
+            {blogs.map(blog => (
+              <Link to={"/blogs/" + blog.frontmatter.slug} key={blog.id}>
+                <SmallCard data={blog} />
+              </Link>
+            ))}
+          </div>
+        </div>
+        <div className={styles.side}>
+          <Sidebar markdowns={blogs} />
         </div>
       </section>
     </Layout>
@@ -49,7 +48,6 @@ export const query = graphql`
           listDate: date(formatString: "M/D/YY")
           tags
           type
-          description
         }
         id
       }

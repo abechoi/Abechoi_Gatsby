@@ -1,19 +1,19 @@
 .header {
   height: calc(100vh - 175px);
 }
-.blogsContainer {
+.page {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding-top: 40px;
 }
-.blogsContainer > h2 {
+.page > h2 {
   display: none;
 }
-.blogsContainer > h3 {
+.page > h3 {
   display: none;
 }
-.blogs {
+.container {
   display: grid;
   grid-template-columns: 1fr;
   width: fit-content;
@@ -21,21 +21,21 @@
   margin: 0 auto;
   grid-gap: 10px;
 }
-.blogs h3 {
+.container h3 {
   text-align: center;
   margin: 20px 0px;
   font-weight: 500;
 }
-.blogs p {
+.container p {
   color: #20232a;
   margin: 4px 0;
 }
 
-.blogs a {
+.container a {
   color: #20232a;
 }
 
-.blogSide {
+.side {
   display: none;
 }
 
@@ -43,40 +43,31 @@
   .header {
     height: calc(100vh - 175px);
   }
-  .blogsContainer > h2 {
+  .page > h2 {
     font-size: 2em;
   }
-  .blogsContainer > h3 {
+  .page > h3 {
     font-size: 1.5em;
   }
-
-  .blogs {
+  .container {
     margin: 20px auto;
     display: grid;
-  }
-  .blog {
-    margin: 0 auto;
-    display: block;
-    border-radius: 8px;
-    border: 2px solid #20232a;
-    width: 300px;
-    padding: 5px 10px;
   }
 }
 @media only screen and (min-width: 760px) {
   .header {
     height: calc(100vh - 125px);
   }
-  .blogs {
+  .page {
     grid-template-columns: 1fr 1fr;
     padding: 20px;
   }
 
-  .blogsContainer > h2 {
+  .page > h2 {
     display: initial;
     font-size: 2.5em;
   }
-  .blogsContainer > h3 {
+  .page > h3 {
     display: initial;
     font-size: 1.8em;
     font-weight: 100;
@@ -89,7 +80,7 @@
     height: calc(100vh - 100px);
     grid-template-columns: 3fr 1fr;
   }
-  .blogSide {
+  .side {
     display: initial;
   }
 }

@@ -1,7 +1,7 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
-import * as styles from "../../styles/blogs.module.css"
+import * as styles from "../../styles/content.module.css"
 import SmallCard from "../../components/SmallCard"
 import Sidebar from "../../components/Sidebar"
 import Helmet from "react-helmet"
@@ -15,10 +15,10 @@ export default function Blogs({ data }) {
         <title>Abe Choi | Blogs</title>
       </Helmet>
       <section className={styles.header}>
-        <div className={styles.blogsContainer}>
+        <div className={styles.page}>
           <h2>Blogs</h2>
           <h3>My News & Updates</h3>
-          <div className={styles.blogs}>
+          <div className={styles.container}>
             {blogs.map(blog => (
               <Link to={"/blogs/" + blog.frontmatter.slug} key={blog.id}>
                 <SmallCard data={blog} />
@@ -26,7 +26,7 @@ export default function Blogs({ data }) {
             ))}
           </div>
         </div>
-        <div className={styles.blogSide}>
+        <div className={styles.side}>
           <Sidebar markdowns={blogs} />
         </div>
       </section>
