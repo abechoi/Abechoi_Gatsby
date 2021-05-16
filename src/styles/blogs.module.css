@@ -85,6 +85,7 @@
 
 @media only screen and (min-width: 1200px) {
   .header {
+    display: grid;
     height: calc(100vh - 100px);
     grid-template-columns: 3fr 1fr;
   }
