@@ -1,5 +1,5 @@
 ---
-title: Retro Gaming Zone
+title: Placeholder
 slug: retro-gaming-zone
 type: project
 date: 2021-01-01

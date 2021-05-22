@@ -1,5 +1,5 @@
 ---
-title: Skateboards2Go
+title: Placeholder
 slug: skateboards-to-go
 type: project
 date: 2021-01-09
