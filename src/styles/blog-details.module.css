@@ -46,3 +46,12 @@
 .html p {
   font-size: 20px;
 }
+
+.html pre {
+  padding: 20px;
+  width: fit-content;
+  border-radius: 8px;
+  background: var(--black);
+  color: var(--teal);
+  font-size: larger;
+}

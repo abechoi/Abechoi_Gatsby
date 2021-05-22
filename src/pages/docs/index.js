@@ -7,27 +7,27 @@ import Sidebar from "../../components/Sidebar"
 import Helmet from "react-helmet"
 
 export default function Docs({ data }) {
-  const blogs = data.allMarkdownRemark.nodes
+  const docs = data.allMarkdownRemark.nodes
 
   return (
     <Layout>
       <Helmet>
-        <title>Abe Choi | Blogs</title>
+        <title>Abe Choi | Docs</title>
       </Helmet>
       <section className={styles.header}>
         <div className={styles.page}>
-          <h2>Blogs</h2>
-          <h3>My News & Updates</h3>
+          <h2>Docs</h2>
+          <h3>For My Future Self</h3>
           <div className={styles.container}>
-            {blogs.map(blog => (
-              <Link to={"/blogs/" + blog.frontmatter.slug} key={blog.id}>
-                <SmallCard data={blog} />
+            {docs.map(doc => (
+              <Link to={"/docs/" + doc.frontmatter.slug} key={doc.id}>
+                <SmallCard data={doc} />
               </Link>
             ))}
           </div>
         </div>
         <div className={styles.side}>
-          <Sidebar markdowns={blogs} />
+          <Sidebar markdowns={docs} />
         </div>
       </section>
     </Layout>
