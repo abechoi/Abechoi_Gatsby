@@ -8,6 +8,10 @@ thumb: ../../images/thumbs/nodejs.png
 git: "https://github.com/abechoi/Vanilla_Node_Rest_API"
 ---
 
+## Edit on 5-26-2021
+
+&nbsp;&nbsp;&nbsp;&nbsp;I've added express/server.js, to make it easier to compare the differences. Biggest takeaway here is that express/server.js acts as a hybrid of server.js and productController.js.
+
 ## Summary
 
 &nbsp;&nbsp;&nbsp;&nbsp;Lately, I've been spending so much time leaning frontend, that I felt the need to brush up
